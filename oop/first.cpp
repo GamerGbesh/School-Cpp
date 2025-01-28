@@ -12,17 +12,19 @@ class Car{
         int speed;
 
     public:
-        Car(string company, int seatNumber, string color, int wheels, int speed){
-            company_setter(company);
-            seat_setter(seatNumber);
-            color_setter(color);
-            wheels_setter(wheels);
-            speed_setter(speed);
+        Car(string company, int seatNumber, string color, int wheels, int speed): company(company), seatNumber(seatNumber), 
+        color(color), wheels(wheels), speed(speed){
+            // company_setter(company);
+            // seat_setter(seatNumber);
+            // color_setter(color);
+            // wheels_setter(wheels);
+            // speed_setter(speed);
         }
 
         void company_setter(string company){
             this->company = company;
         }
+
         string company_getter(){
             return this->company;
         }
@@ -58,8 +60,7 @@ class Car{
 
 
 int main(){
-    Car car("BMw", 2, "Blue", 4, 35);
-    car.company_setter("BMW");
+    Car car("BMW", 2, "Blue", 4, 35);
     cout << car.company_getter() << endl;
     cout << car.seat_getter() << endl;
     cout << car.color_getter() << endl;
