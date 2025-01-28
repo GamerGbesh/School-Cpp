@@ -1,0 +1,6 @@
+-radius : double
++Circle()
++Circle(double )
++Circle(clock&)
++setRadius : void
++getArea : double

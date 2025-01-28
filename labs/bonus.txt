@@ -1,0 +1,5 @@
+1. Implemented function f.
+2. Color coded some of the output for better readability.
+    > Green indicates successful execution.
+    > Red indicates failed execution.
+
